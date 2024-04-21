@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Users/husll/Desktop/Лабораторна_робота_Веб_програмування_DOM/Ex6/Ex6Css.css">
+    <script src="/Users/husll/Desktop/Лабораторна_робота_Веб_програмування_DOM/Ex6/Ex6JS.js"></script>
+    <title>Реєстрація користувача</title>
+</head>
+<body>
+    <h2>Форма реєстрації користувача</h2>
+    <form action="process_registration.php" method="POST">
+        <label for="login">Логін:</label><br>
+        <input type="text" id="login" name="login" required><br>
+        
+        <label for="password">Пароль (щонайменше 6 символів):</label><br>
+        <input type="password" id="password" name="password" required minlength="6"><br>
+        
+        <input type="checkbox" id="license" name="license" required>
+        <label for="license">Погоджуюся з ліцензійною угодою</label><br>
+        
+        <input type="submit" onclick="AddLogin()" value="Зареєструватися">
+    </form>
+</body>
+</html>
